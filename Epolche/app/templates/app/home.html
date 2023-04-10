@@ -1,0 +1,225 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block NavCate %}
+<ul>
+    <li><a href="iphone.html">iPhone</a></li>
+    <li><a href="mac.html">Mac</a></li>
+    <li><a href="ipad.html">iPad</a></li>
+    <li><a href="watch.html">Watch</a></li>
+    <li><a href="pod.html">Âm thanh</a></li>
+    <li><a href="oldProduct.html">Máy cũ</a></li>
+    <li><a href="accessory.html">Phụ kiện</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="warrant.html">Bảo hành</a></li>
+</ul>
+{% endblock NavCate %}
+
+{% block Banner %} 
+<div class="banner">
+    <div class="bgbanner-img">
+        <img src="{%static 'app/img/banner/top-free2880-800-1920x533.png' %}"/>
+    </div>
+</div>
+{% endblock Banner %}
+
+{% block Cate %}
+<div class="category">
+    <ul class="box-category">
+        <li>
+            <div class="cate-img">
+                <a href="iphone.html"><img src="{% static 'app/img/cate/img-cateiphone-1.png' %}" alt="">
+            </div>
+            <span>iPhone</span></a>
+        </li>
+        <li>
+            <div class="cate-img">
+                <a href="mac.html"><img src="{% static 'app/img/cate/img-catemac-1.png' %}" alt="">
+            </div>
+            <span>Mac</span></a>
+        </li>
+        <li>
+            <div class="cate-img">
+                <a href="ipad.html"><img src="{% static 'app/img/cate/img-cateipad.png' %}" alt="">
+            </div>
+            <span>iPad</span></a>
+        </li>
+        <li>
+            <div class="cate-img">
+                <a href="watch.html"><img src="{% static 'app/img/cate/img-catewatch-1.png' %}" alt="">
+            </div>
+            <span>Watch</span></a>
+        </li>
+        <li>
+            <div class="cate-img">
+                <a href="pod.html"><img src="{% static 'app/img/cate/img-catesound.png' %}" alt="">
+            </div>
+            <span>Âm thanh</span></a>
+        </li>
+        <li>
+            <div class="cate-img">
+                <a href="accessory.html"><img src="{% static 'app/img/cate/img-catephukien.png' %}" alt="">
+            </div>
+            <span>Phụ kiện</span></a>
+        </li>
+    </ul>
+</div>
+{% endblock Cate %}
+
+{% block Prod %} 
+<div class="product">
+    <h4>TRENDING NOW</h4>
+    <ul class="product-list">
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/iPhone/iphone-14-vang-thumb-topzone-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Mac/apple-macbook-air-m2-2022-16gb-vàng-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Mac/apple-macbook-pro-m2-2022-16gb-xám-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Pod/airpods-3-thumb-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="product">
+    <h4>NEW ARRIVALS</h4>
+    <ul class="product-list">
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/iPhone/iphone-14-vang-thumb-topzone-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Mac/apple-macbook-air-m2-2022-16gb-vàng-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Mac/apple-macbook-pro-m2-2022-16gb-xám-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="prod-items">
+                <div class="prod-img">
+                    <img src="{%static 'app/img/Pod/airpods-3-thumb-650x650.png' %}" alt="">
+                </div>
+                <h5>Iphone 14 Pro Max 128GB</h5>
+                <span class="price-box">
+                    28.190.000₫
+                    <strike>34.490.000₫</strike>
+                    <small>-18%</small>
+                </span>
+            </div>
+        </li>
+    </ul>
+</div> 
+{% endblock Prod %}
+
+{% block Blog %} 
+<div class="blog">
+    <h4>BLOG</h4>
+    <ul class="blog-list">
+        <li>
+            <div class="blog-items">
+                <div class="blog-img">
+                    <img src="{%static 'app/img/blog/blog1.jpeg' %}" alt="">
+                </div>
+                <div class="content-blog">
+                    <a href="">Galaxy S23 Ultra so dáng với iPhone 14 Pro Max</a>
+                    <h6>Hai smartphone đầu bảng của Samsung và Apple đều có màn hình đục lỗ kích thước lớn nhưng khác biệt về thiết kế và camera.</h6>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="blog-items">
+                <div class="blog-img">
+                    <img src="{%static 'app/img/blog/blog2-airp.jpeg' %}" alt="">
+                </div>
+                <div class="content-blog">
+                    <a href="">AirPods Pro khác gì AirPods 2</a>
+                    <h6>AirPods Pro có thiết kế nhỏ gọn, được bổ sung khả năng chống ồn chủ động, chống bụi, nước nhưng giá cao hơn AirPods 2.</h6>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="blog-items">
+                <div class="blog-img">
+                    <img src="{%static 'app/img/blog/blog3.jpeg' %}" alt="">
+                </div>
+                <div class="content-blog">
+                    <a href="">Apple thử nghiệm chip M2 cho máy Mac</a>
+                    <h6>Apple được cho là đã bắt đầu thử nghiệm nội bộ một số mẫu máy Mac chạy chip M thế hệ tiếp theo.</h6>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+{% endblock Blog %}

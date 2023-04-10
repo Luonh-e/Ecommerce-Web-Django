@@ -1,0 +1,100 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block Cart %} 
+<div class="title_cart">
+    <a href="{% url 'home' %}">
+        <i class="fas fa-chevron-left"></i>
+        Mua thêm sản phẩm khác</a>
+    <h5>Giỏ hàng của bạn</h5>
+</div>
+<div class="prod_cart">
+    <table class="table_prod_cart">
+        <tbody id="datarow">
+            <tr>
+                <td class="prod_cart-img">
+                    <img src="{% static 'app/img/iPad/ipad-air-5-wifi-startlight-650x650.png' %}">
+                </td>
+                <td class="name_prod_table">Apple Ipad 4 Wifi 16GB</td>
+                <td>2</td>
+                <td>Xám</td>
+                <td><span>23,600,000</span></td>
+                <td>
+                    <a>
+                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="prod_cart-img">
+                    <img src="{% static 'app/img/iPhone/iphone-14-plus-tim-thumb-650x650.png' %}">
+                </td>
+                <td class="name_prod_table">iPhone 14 Pro Max 128GB</td>
+                <td>4</td>
+                <td>Tím</td>
+                <td><span>1,0796,000</span></td>
+                <td>
+                    <a>
+                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="prod_cart-img">
+                    <img src="{% static 'app/img/iPhone/iphone-11-red-1-1-1-650x650.png' %}">
+                </td>
+                <td class="name_prod_table">Apple iPhone 5 16GB White</td>
+                <td>8</td>
+                <td>Đỏ</td>
+                <td><span>119,920,000</span></td>
+                <td>
+                    <a>
+                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                    </a>
+                </td>
+            </tr>
+            <tr class="end_table">
+                <th>Tạm tính:</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th><span class="total_price">150,000,000</span></th>
+                <th></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="bill_info">
+    <h4>Thông tin khách hàng</h4>
+    <div class="cus_info">
+        <input type="text" placeholder="Họ & Tên">
+        <input type="text" placeholder="Số điện thoại">
+    </div>
+    <div class="cus_addrs">
+        <input type="text" placeholder="Địa chỉ">
+    </div>
+    <div class="cus_note">
+        <input type="text" placeholder="Ghi chú (Nếu có)">
+    </div>
+    <ul class="anoder_choice">
+        <li>
+            <input type="checkbox">Gọi người khác nhận hàng
+        </li>
+        <li>
+            <input type="checkbox">Hướng dẫn sử dụng, giải đáp thắc mắc sản phẩm
+        </li>
+        <li>
+            <input type="checkbox">Xuất hoá đơn công ty
+        </li>
+    </ul>
+</div>
+<div class="go_payment">
+    <div class="final_price">              
+        <h4>Tổng tiền:</h4>
+        <span class="total_price">150,000,000</span>
+    </div>
+    <a href="{% url 'payment' %}">Đặt hàng</a>
+    <h5>Anh có thể lựa chọn các hình thức thanh toán ở bước sau</h5>
+</div>
+{% endblock Cart %}
+
+
